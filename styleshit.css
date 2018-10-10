@@ -89,9 +89,14 @@ figure{
     padding: 0px;
     margin: 0px;
 }
+img{   
+    width: auto;
+    height: auto;
+    width: 100%;
+}
 #related img{
     z-index: -1;
-    height: 150px;
+    max-width: 150px;
     max-height: 150px;
 }
 
