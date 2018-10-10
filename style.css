@@ -3,7 +3,11 @@ body{
     background-size: 0px;
     background-color: lightgray;
     font-family: "Trebuchet MS", Times, serif;
-    font-size: 1vw;
+    font-size: 16px;
+}
+main{
+    border: solid white 10px;
+    background-color: white;
 }
 a:link{
     color: #00a7ff;
@@ -11,41 +15,33 @@ a:link{
 a:visited{
     color: palevioletred;
 }
-main{
-    border: solid white 10px;
+p{
+    padding-left: 15px;
 }
 em{
-    font-size: 1.1vw;
+    font-size: 18px;
     color: #71808b;
     font-weight: bold;
 }
 header{
     background-color: #182073;
     color: white;
-    padding-top: 0.2vw;
+    padding-top: 2px;
 }
-footer{
-    background-color: #182073;
-    padding-top: 0.5vw;
-    padding-bottom: 0.5vw;
+header > p,h1{
+    padding-left: 35px;
 }
-footer>p>em{
-    color: white;
-}
-header> p,h1{
-    padding-left: 2vw;
-}
-header>p{
+header > p {
     font-style:italic;
 }
 header>nav{
     background-color:#3748ac;
-    padding-bottom: 0.0004vw;
+    padding-bottom: 0.0004px;
 }
 
-header>nav li{
+header > nav li{
     display:inline;
-    font-size: 1.5vw;
+    font-size: 25px;
     margin-left: 0px;
 }
 h3{
@@ -53,15 +49,12 @@ h3{
     background-color: #6e7bc4;
     color: white;
     margin: auto;
-    padding: 1vw 0vw 1vw 1vw;
-}
-main{
-    background-color: white;
+    padding: 20px 0px 20px 20px;
 }
 #description, #related, #reviews{
-    width: 40.75vw;
+    max-width: 700px;
     border: solid #bdc3e6 1px;
-    margin-bottom: 1vw;
+    margin-bottom: 15px;
 }
 #reviews > div{
     border-bottom: solid 1px #bdc3e6;
@@ -79,31 +72,35 @@ time{
 #description figcaption{
     background-color: #bdc3e6;
     font-family: "Times New Roman", Times, serif;
-    font-size: 1vw;
-    padding-left: 0.5vw;
-    padding-top: 1vw;
-    padding-bottom: 1vw;
+    font-size: 16px;
+    padding-left: 7.5px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }   
 figure{
     border: solid transparent 0px;
     padding: 0px;
     margin: 0px;
 }
-figure img{
-    height: 22vw;
+img{   
+    width: auto;
+    height: auto;
+    width: 100%;
 }
-
-img{
+#related img{
     z-index: -1;
-    height: 10vw;
+    max-width: 150px;
+    max-height: 150px;
 }
-
-
-div img:hover{
+#related a:hover{
     box-sizing: border-box;
-    box-shadow: inset 0px 10px 0px pink;
+    box-shadow: inset 0px -10px 0px pink;
 }
-
-p{
-    padding-left: 1vw;
+footer{
+    background-color: #182073;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+footer>p>em{
+    color: white;
 }
